@@ -124,7 +124,7 @@ openssl genrsa -out DTRkey.pem 2048
 * Use the CA to create a key pair and csr for the DTR server. You should use the CN dtr.docker.vm!
 
 ```
-openssl req -subj "/CN=dtr.docker.vm" -new -key DTRkey.pem -out DTR.csr -sha256
+openssl req -subj "//CN=dtr.docker.vm" -new -key DTRkey.pem -out DTR.csr -sha256
 ```
 
 * Use the CA to sign the DTR CSR
